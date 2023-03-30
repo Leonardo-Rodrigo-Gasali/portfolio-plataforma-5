@@ -9,150 +9,233 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar">
-        <h1 class="logo">Portafolio</h1>
-        <ul class="nav-links-contenedor">
-            <li class="nav-links"><a class="links activo" href="#encabezado">Inicio</a></li>
-            <li class="nav-links"><a class="links" href="#sobremi">Sobre Mi</a></li>
-            <li class="nav-links"><a class="links" href="#habilidades">Habilidades</a></li>
-            <li class="nav-links"><a class="links" href="#educacion">Educación</a></li>
-            <li class="nav-links"><a class="links" href="#proyectos">Proyectos</a></li>
-            <li class="nav-links"><a class="links" href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-    
-
-    <!-- Header o Encabezado -->
-    <header class="header" id="encabezado">
-        <div class="contenido">
-            <h1 class="encabezado-estilo">Hola, Mi nombre es Leonardo Gasali y soy <span class="hab-nombre">Front-End
-                    Desarrollador</span></h1>
-            <a href="#" class="btn">Contactame</a>
+    <nav class="nav" id="nav">
+        <div class="nav-centrado">
+            <div class="nav-header">
+                <a href="#" class="nav-logo">Portafolio</a>
+         <!--        <img src="assets/img/logo.png" alt="logo" class="nav-logo"> -->
+                <button class="nav-btn" id="nav-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="">Inicio</a>
+                </li>
+                <li>
+                    <a href="#sobremi">Sobre Mi</a>
+                </li>
+                <li>
+                    <a href="#">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="encabezado-img-contenedor">
-            <div class="circulo"></div>
-            <img class="encabezado-imagen" src="assets/img/encabezado-imagen.jpg" alt="encabezado-imagen">
+    <aside class="sidebar" id="sidebar">
+        <div>
+            <button class="close-btn" id="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="sidebar-links">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#sobremi">Sobre Mi</a>
+                </li>
+                <li>
+                    <a href="#">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+            <!-- Social-iconos -->
+            <ul class="social-iconos">
+                <li>
+                    <a href="#" class="social-icono"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="social-icono"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="social-icono"><i class="fab fa-squarespace"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="social-icono"><i class="fab fa-behance"></i></a>
+                </li>
+                <li>
+                    <a href="#" class="social-icono"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="section-centrado hero-center">
+            <article class="hero-info">
+                <div class="underline"></div>
+                <h1>Mi nombre es Leonardo</h1>
+                <h4>Freelance Web & mobile Web developer</h4>
+                <a href="#" class="btn hero-btn">Hire Me</a>
+                <ul class="social-iconos hero-iconos">
+                    <li>
+                        <a href="#" class="social-icono"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icono"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icono"><i class="fab fa-squarespace"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icono"><i class="fab fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icono"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </article>
+            <article class="hero-img">
+                <img src="assets/img/Foto 4x4 perfil.png" alt="Leonardo" class="hero-photo">
+            </article>
         </div>
     </header>
 
-    
-    <!-- Sobre Mi -->
-    <section class="sobremi" id="sobremi">
-        <h1 class="sobremi-titulo">Sobre Mi</h1>
 
-        <div class="sobremi-contenedor">
-            <div class="imagen-contenedor">
-                <div class="square"></div>
-                <img src="assets/img/Foto 4x4 perfil.png" alt="" class="sobremi-img">
-                <div class="social-links">
-                    <a href="#"><img src="assets/" class="social-img" alt=""></a>
-                    <a href="#"><img src="assets/" class="social-img" alt=""></a>
-                    <a href="#"><img src="assets/" class="social-img" alt=""></a>
-                    <a href="#"><img src="assets/" class="social-img" alt=""></a>
-                    <a href="#"><img src="assets/" class="social-img" alt=""></a>
+    <!-- Section Sobre Mi -->
+    <section class="section sobremi" id="sobremi">
+        <div class="section-centrado sobremi-centrado">
+            <article class="sobremi-img">
+                <img src="assets/img/Foto 4x4 perfil.png" alt="Leonardo" class="hero-photo">
+            </article>
+            <article class="sobremi-info">
+                <div class="section-titulo sobremi-titulo">
+                    <h2>Sobre Mi</h2>
+                    <div class="underline"></div>
                 </div>
-            </div>
-
-            <!-- Info -->
-            <div class="info">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odio minus quasi, sequi, architecto debitis cupiditate voluptates corrupti minima libero omnis error veniam asperiores unde ex nihil. Quos dolor eos dolores explicabo eaque labore odit fuga alias quam odio sed nulla nihil eius, neque, hic placeat deleniti? Nesciunt ex quos, nemo minus perspiciatis excepturi! A veniam, cupiditate laudantium nulla magnam placeat fuga voluptatibus eius harum nisi veritatis non fugit recusandae deserunt expedita delectus dolorum eligendi necessitatibus debitis dolor cum, in hic? Deleniti nobis, repellat repellendus iusto non aspernatur sit tempora architecto, blanditiis quae at corporis consequuntur quod cupiditate, ullam modi.</p>
-                <a href="#" class="btn">Descargar CV</a>
-            </div>
-
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet esse fugit alias rerum recusandae quasi, nemo cupiditate corrupti deleniti, quod quisquam autem similique expedita ipsam vel iure eius blanditiis suscipit molestiae nesciunt voluptate laboriosam aliquid dignissimos! Esse numquam voluptatem quo eveniet earum facilis, nobis eius?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet esse fugit alias rerum recusandae quasi, nemo cupiditate corrupti deleniti, quod quisquam autem similique expedita ipsam vel iure eius blanditiis suscipit molestiae nesciunt voluptate laboriosam aliquid dignissimos! Esse numquam voluptatem quo eveniet earum facilis, nobis eius?</p>
+                <a href="#" class="btn">Sobre Mi</a>
+            </article>
         </div>
     </section>
-
-
 
     <!-- Habilidades -->
-    <section class="habilidades-section" id="habilidades">
-        <h1 class="habilidades-titulo">Habilidades</h1>
-
-        <div class="habilidades">
-            <div class="habilidad-nombre">Html</div>
-            <div class="habilidad-nombre">Css</div>
-            <div class="habilidad-nombre">JavaScript</div>
-            <div class="habilidad-nombre">React.js</div>
-            <div class="habilidad-nombre">sql</div>
-            <div class="habilidad-nombre">Git</div>
-            <div class="habilidad-nombre">Github</div>
-        </div>
-    </section>
-
-        <!-- Educación -->
-        <section class="educacion-section" id="educacion">
-            <h1 class="educacion-titulo">Educación</h1>
-            <div class="linea-de-tiempo-contenedor">
-
-                <div class="card-contenedor">
-                    <div class="card">
-                        <h1 class="card-titulo">2000 - 2002</h1>
-                        <p class="card-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id optio perferendis veritatis placeat aperiam ipsam voluptas minima adipisci, maiores accusamus.</p>
-                    </div>
-                </div>
-
-                    <div class="card-contenedor">
-                        <div class="card">
-                            <h1 class="card-titulo">2000 - 2002</h1>
-                            <p class="card-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id optio perferendis veritatis placeat aperiam ipsam voluptas minima adipisci, maiores accusamus.</p>
+    <section class="section skills">
+        <div class="section-titulo">
+            <h2>Skills</h2>
+            <div class="underline"></div>
+            <div class="section-centrado skills-center">
+                <article>
+                    <h3>Front End</h3>
+                    <div class="skill">
+                        <p>HTML</p>
+                        <div class="skill-container">
+                            <div class="skill-value value-90"></div>
+                            <p class="skill-text skill-text-90"> 90% </p>
                         </div>
                     </div>
-
-                    <div class="card-contenedor">
-                        <div class="card">
-                            <h1 class="card-titulo">2000 - 2002</h1>
-                            <p class="card-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id optio perferendis veritatis placeat aperiam ipsam voluptas minima adipisci, maiores accusamus.</p>
+                    <div class="skill">
+                        <p>CSS</p>
+                        <div class="skill-container">
+                            <div class="skill-value value-75"></div>
+                            <p class="skill-text skill-text-75"> 75% </p>
                         </div>
                     </div>
-
-                    <div class="card-contenedor">
-                        <div class="card">
-                            <h1 class="card-titulo">2000 - 2002</h1>
-                            <p class="card-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id optio perferendis veritatis placeat aperiam ipsam voluptas minima adipisci, maiores accusamus.</p>
+                    <div class="skill">
+                        <p>JavaScript</p>
+                        <div class="skill-container">
+                            <div class="skill-value value-60"></div>
+                            <p class="skill-text skill-text-60"> 60% </p>
                         </div>
                     </div>
-
-                    <div class="card-contenedor">
-                        <div class="card">
-                            <h1 class="card-titulo">2000 - 2002</h1>
-                            <p class="card-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id optio perferendis veritatis placeat aperiam ipsam voluptas minima adipisci, maiores accusamus.</p>
+                    <div class="skill">
+                        <p>React</p>
+                        <div class="skill-container">
+                            <div class="skill-value value-45"></div>
+                            <p class="skill-text skill-text-45"> 45% </p>
                         </div>
-                </div>
+                    </div>
+                </article>
+                <article>
+                    <h3>Back End</h3>
+                    <div class="skill">
+                        <p>MySQL</p>
+                        <div class="skill-container">
+                            <div class="skill-value value-60"></div>
+                            <p class="skill-text skill-text-60"> 60% </p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Mongo DB</p>
+                        <div class="skill-container">
+                            <div class="skill-value value-25"></div>
+                            <p class="skill-text skill-text-25"> 25% </p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Node JS</p>
+                        <div class="skill-container">
+                            <div class="skill-value value-25"></div>
+                            <p class="skill-text skill-text-25"> 25% </p>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Python</p>
+                        <div class="skill-container">
+                            <div class="skill-value value-15"></div>
+                            <p class="skill-text skill-text-15"> 15% </p>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </section>
-
-    <!-- Proyectos -->
-    <section class="proyectos-section" id="proyectos">
-        <h1 class="proyectos-titulo">Proyectos</h1>
-
-        <div class="proyectos-filtro">
-            <button class="btn btn-filtro active">All</button>
-            <button class="btn btn-filtro">Css</button>
-            <button class="btn btn-filtro">Html</button>
-            <button class="btn btn-filtro">Javascript</button>
-            <button class="btn btn-filtro">FullStack</button>
         </div>
-
-        <!-- Proyectos tarjeta -->
-
     </section>
 
-
-    <!-- Contacto -->
-
-    <footer class="contacto-footer" id="contacto">
-        <h1 class="contacto-titulo">Contacto</h1>
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="social-iconos">
+            <li>
+                <a href="#" class="social-icono"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#" class="social-icono"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a href="#" class="social-icono"><i class="fab fa-squarespace"></i></a>
+            </li>
+            <li>
+                <a href="#" class="social-icono"><i class="fab fa-behance"></i></a>
+            </li>
+            <li>
+                <a href="#" class="social-icono"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+        <p>© <span id="date">2023</span> Leonardo Gasali, All rights reserved</p>
     </footer>
 
-
     <!-- JS -->
-    <script src=""></script>
+    <script src="assets/script/script.js"></script>
     
 </body>
 </html>
